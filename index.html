@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/png" href="./images/Screenshot_2025-08-27_002259-removebg-preview.png">
+    <title>Darja markting agnecy</title>
+  <link href="style.css" rel="stylesheet"></head>
+  <body
+    x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'b eh': darkMode === true}"
+  >
+    <!-- ===== Header Start ===== -->
+   <!-- ===== Header Start ===== -->
+<!-- ===== Header Start ===== -->
+<header style="background: linear-gradient(90deg, #5625c3, #9b3efc, #ff4ecd); padding: 10px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"
+  class="g s r vd ya cj"
+  :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
+  @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false"
+>
+  <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
+    <div class="vd to/4 tc wf yf" style="display: flex; align-items: center; justify-content: space-between;">
+      
+      <!-- Logo -->
+      <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+        <img src="images/image-removebg-preview (1).png" alt="Logo" style="height: 50px; border-radius: 12px;" />
+      </a>
+
+      <!-- Hamburger Toggle BTN -->
+      <button class="po rc" @click="navigationOpen = !navigationOpen" style="color: white;">
+        <span class="rc i pf re pd">
+          <span class="du-block h q vd yc">
+            <span class="rc i r s eh um tg te rd eb ml jl dl" :class="{ 'ue el': !navigationOpen }"></span>
+            <span class="rc i r s eh um tg te rd eb ml jl fl" :class="{ 'ue qr': !navigationOpen }"></span>
+            <span class="rc i r s eh um tg te rd eb ml jl gl" :class="{ 'ue hl': !navigationOpen }"></span>
+          </span>
+        </span>
+      </button>
+    </div>
+
+    <!-- Navigation -->
+    <div
+      class="vd wo/4 sd qo f ho oo wf yf"
+      :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"
+    >
+      <nav>
+        <ul class="tc _o sf yo cg ep" style="color: white; display: flex; gap: 30px; font-weight: 500;">
+          <li><a href="index.html" class="xl" style="color:white;">Home</a></li>
+          <li><a href="index.html#features" class="xl" style="color:white;">Features</a></li>
+          <li><a href="index.html#support" class="xl" style="color:white;">Support</a></li>
+
+          
+        </ul>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- ===== Header End ===== -->
+
+<!-- ===== Header End ===== -->
+
+
+    <!-- ===== Header End ===== -->
+
+    <main>
+    <!-- ===== Hero Start ===== -->
+<!-- ===== Hero Start ===== -->
+<!-- ===== Hero Start ===== -->
+<section class="hero-section" style="position: relative; overflow: hidden; background: #fff; padding: 150px 20px 80px;">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto; gap: 40px;">
+
+    <!-- Left Text -->
+    <div class="hero-text" style="flex: 1; min-width: 320px; color: #222; padding-right: 20px;">
+      <h1 style="font-size: 2.8rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2;">
+        We specialize in Digital Marketing.
+      </h1>
+      <p style="font-size: 1.1rem; margin-bottom: 30px; opacity: 0.85;">
+Our agency specializes in delivering complete digital marketing solutions that help brands grow and connect with their audiences. From creating eye-catching sponsored campaigns and producing engaging video content to designing and developing modern, user-friendly websites, we cover every aspect of your online presence. With a mix of creativity, strategy, and the latest technology, we ensure your business stands out in the competitive digital landscape and reaches the right customers at the right time.      </p>
+      <a href="#" style="display: inline-block; background-color: #fd6901; color: #fff; padding: 14px 28px; border-radius: 10px; font-weight: 600; text-decoration: none; margin-right: 20px;">
+        Get Started Now
+      </a>
+      <span style="display: block; margin-top: 15px; font-size: 0.95rem; color:#444;">
+        📞 Call us <strong>(+216) 98 555 687</strong><br>For any question or concern
+      </span>
+    </div>
+
+    <!-- Right Side with Phone + 3D Character -->
+    <div style="flex: 1; min-width: 300px; display: flex; justify-content: center; align-items: flex-end; gap: 30px; position: relative;">
+      
+      <!-- Animated Blob Behind -->
+      <div style="
+        position: absolute;
+        bottom: -60px;
+        right: -80px;
+        width: 450px;
+        height: 450px;
+        background: #5e17eb;
+        opacity: 0.2;
+        border-radius: 50%;
+        animation: floatBlob 6s ease-in-out infinite alternate;
+        z-index: 0;
+      "></div>
+
+      <!-- Phone with video -->
+      <div style="
+        position: relative;
+        border-radius: 40px;
+        overflow: hidden;
+        width: 300px;
+        aspect-ratio: 9/16;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+        background: black;
+        border: 12px solid #111;
+        z-index: 2;
+        animation: floatPhone 5s ease-in-out infinite alternate;
+      ">
+        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="./images/Wherever you are 🌍… the same message calls you 📩It’s not chance… it’s a gathering 🤲The moment.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- Phone notch -->
+        <div style="
+          position: absolute;
+          top: 6px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90px;
+          height: 18px;
+          background: #111;
+          border-radius: 12px;
+        "></div>
+      </div>
+
+      <!-- 3D Character -->
+      <img src="images/1756250513_img_0.webp" alt="Marketing Guy" style="height: 380px; z-index: 2; animation: floatChar 6s ease-in-out infinite alternate;">
+    </div>
+  </div>
+</section>
+
+<!-- Animations -->
+<style>
+@keyframes floatPhone {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-20px); }
+}
+
+@keyframes floatChar {
+  from { transform: translateY(0px) rotate(-2deg); }
+  to { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes floatBlob {
+  0% { transform: scale(1) translate(0, 0); border-radius: 50%; }
+  100% { transform: scale(1.2) translate(-20px, 20px); border-radius: 40% 60% 55% 45% / 60% 40% 60% 40%; }
+}
+</style>
+
+
+      <!-- ===== Small Features Start ===== -->
+      <section id="features" style="padding-top: 50px;">
+        <div class="bb ze ki yn 2xl:ud-px-12.5">
+          <div class="tc uf zo xf ap zf bp mq">
+            <!-- Small Features Item -->
+            <div class="animate_top kn to/3 tc cg oq">
+              <div class="tc wf xf cf ae cd rg mh">
+                <img src="images/icon-01.svg" alt="Icon" />
+              </div>
+              <div>
+                <h4 class="ek yj go kk wm xb">24/7 Support</h4>
+                <p>    Our team is always available to assist you at any time of the day, ensuring your questions are answered quickly and efficiently.
+</p>
+              </div>
+            </div>
+
+            <!-- Small Features Item -->
+            <div class="animate_top kn to/3 tc cg oq">
+              <div class="tc wf xf cf ae cd rg nh">
+                <img src="images/icon-02.svg" alt="Icon" />
+              </div>
+              <div>
+                <h4 class="ek yj go kk wm xb">Take Ownership</h4>
+                <p>Take ownership: be responsible, proactive, and accountable for your actions.</p>
+              </div>
+            </div>
+
+            <!-- Small Features Item -->
+            <div class="animate_top kn to/3 tc cg oq">
+              <div class="tc wf xf cf ae cd rg oh">
+                <img src="images/icon-03.svg" alt="Icon" />
+              </div>
+              <div>
+                <h4 class="ek yj go kk wm xb">Team Work</h4>
+                <p>Teamwork means collaborating, supporting each other, and achieving goals together</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Small Features End ===== -->
+
+      <!-- ===== About Start ===== -->
+      <section class="ji gp uq 2xl:ud-py-35 pg">
+        <div class="bb ze ki xn wq">
+          <div class="tc wf gg qq">
+            <!-- About Images -->
+            <div class="animate_left xc gn gg jn/2 i">
+              <div>
+                <img src="images/shape-05.svg" alt="Shape" class="h -ud-left-5 x" />
+                <img src="images/about-01.png" alt="About" class="ib" />
+                <img src="images/about-02.png" alt="About" />
+              </div>
+              <div>
+                <img src="images/shape-06.svg" alt="Shape" />
+                <img src="images/about-03.png" alt="About" class="ob gb" />
+              </div>
+            </div>
+
+            <!-- About Content -->
+         <div class="animate_right jn/2">
+  <h4 class="ek yj mk gb" style="color: #fd6901;">Why Choose Us</h4>
+  <h2 class="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
+  <p class="uo">Darja is a new-generation agency that blends innovation with top-quality service, helping businesses grow and stay ahead in the digital world.</p>
+
+<a href="https://player.vimeo.com/video/1118202364"  class="vc wf hg mb" style="color: #fd6901; border-color: #fd6901;">
+  <span class="tc wf xf be dd rg i gh ua" style="background-color: #fd6901; border-color: #fd6901;">
+    <span class="nf h vc yc vd rg gh qk -ud-z-1" style="background-color: #fd6901;"></span>
+    <img src="images/icon-play.svg" alt="Play" style="filter: invert(40%) sepia(100%) saturate(500%) hue-rotate(15deg);">
+  </span>
+  <span class="kk" style="color: #fd6901;">SEE HOW WE WORK</span>
+</a>
+
+
+
+</div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== About End ===== -->
+
+      <!-- ===== Team Start ===== -->
+      <section class="i pg ji gp uq">
+        <!-- Bg Shapes -->
+        <span class="rc h s r vd fd/5 fh rm"></span>
+        <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
+        <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" />
+        <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
+        <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
+
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`, sectionTitleText: `A new-generation team with strong experience, bringing creativity and expertise to every project.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+    <h2
+            x-text="sectionTitle"
+            class="fk vj pr kk wm on/5 gq/2 bb _b"
+    >
+    </h2>
+    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+</div>
+
+
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ze i va ki xn xq jb jo">
+          <div class="wc qf pn xo gg cp">
+            <!-- Team Item -->
+            <div class="team-card">
+  <div class="team-image">
+    <img src="images/ali.jpg" alt="Ali Bedda" />
+ 
+  </div>
+  <h4 class="team-name">Ali Bedda</h4>
+  <p class="team-role">Founder</p>
+</div>
+ <div class="team-card">
+  <div class="team-image">
+    <img src="images/ilyes.jpg" alt="Ali Bedda" />
+ 
+  </div>
+  <h4 class="team-name">Ilyes Machraoui</h4>
+  <p class="team-role">Development</p>
+</div>
+ <div class="team-card">
+  <div class="team-image">
+    <img src="images/nouha.jpg" alt="Ali Bedda" />
+ 
+  </div>
+  <h4 class="team-name">Nouha Blouza</h4>
+  <p class="team-role">Product Manager</p>
+</div>
+ <div class="team-card">
+  <div class="team-image">
+    <img src="images/anis 1.jpg" alt="Ali Bedda" />
+ 
+  </div>
+  <h4 class="team-name">Anês Mââmêr </h4>
+  <p class="team-role">Manager RH</p>
+</div>
+ <div class="team-card">
+  <div class="team-image">
+    <img src="images/roya.jpg" alt="Ali Bedda" />
+ 
+  </div>
+  <h4 class="team-name">Roeya selmi </h4>
+  <p class="team-role">Social Medai Manager</p>
+</div>
+
+<style>
+.team-card {
+  width: 180px; /* slightly wider than image */
+  text-align: center;
+  margin: 20px;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.team-image {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.team-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fd6901;
+  border-radius: 50%;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.team-name {
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.team-role {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+</style>
+
+
+            <!-- Team Item -->
+           
+          </div>
+        </div>
+      </section>
+      <!-- ===== Team End ===== -->
+
+      <!-- ===== Services Start ===== -->
+    <section class="lj tp kr">
+  <!-- Section Title Start -->
+  <div
+    x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `    We are a marketing agency helping businesses grow through creative content, social media, and digital strategies.
+`}"
+  >
+    <div class="animate_top bb ze rj ki xn vq">
+      <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b"></h2>
+      <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+    </div>
+  </div>
+  <!-- Section Title End -->
+
+  <div class="bb ze ki xn yq mb en">
+    <div class="wc qf pn xo ng services-container">
+      <!-- Service Items -->
+      <div class="animate_top sg oi pi zq ml il am cn _m service-item">
+        <img src="images/digital-marketing.png" style="height: 50px;" alt="Icon" />
+        <h4 class="ek zj kk wm nb _b">Marketing Digital</h4>
+        <p>Gestion et animation des réseaux sociaux (Facebook, Instagram, TikTok, LinkedIn)<br>
+    Création de contenu créatif (vidéos, photos, motion design)<br>
+    Publicité en ligne (Google Ads, Meta Ads) • SEO & optimisation de sites web</p>
+      </div>
+
+      <div class="animate_top sg oi pi zq ml il am cn _m service-item">
+        <img src="images/brand-identity.png"style="height: 50px;" alt="Icon" />
+        <h4 class="ek zj kk wm nb _b">Branding & Design</h4>
+  <p>Création d’identité visuelle (logo, charte graphique, supports de communication)<br>
+    Storytelling et stratégie de marque<br>
+    Packaging & design créatif</p>      </div>
+
+      <div class="animate_top sg oi pi zq ml il am cn _m service-item">
+        <img src="images/pricing.png" style="height: 50px;" alt="Icon" />
+        <h4 class="ek zj kk wm nb _b">Stratégie & Conseil</h4>
+    <p>Études de marché et positionnement<br>
+    Élaboration de plans marketing adaptés à vos objectifs<br>
+    Formation et accompagnement des équipes internes</p>        </div>
+
+      <div class="animate_top sg oi pi zq ml il am cn _m service-item">
+        <img src="images/event.png" style="height: 50px;" alt="Icon" />
+        <h4 class="ek zj kk wm nb _b">Événementiel & Activations</h4>
+    <p>Organisation d’événements (conférences, lancements, ateliers)<br>
+    Campagnes de street marketing et activations locales<br>
+    Couverture photo/vidéo professionnelle</p>      </div>
+
+    
+    </div>
+  </div>
+</section>
+
+<style>
+/* Parent container */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* space between items */
+}
+
+/* Each service item */
+.service-item {
+  flex: 0 0 calc(50% - 8px); /* 2 per row accounting for gap */
+  box-sizing: border-box;
+}
+
+/* Responsive: 1 per row on small screens */
+@media (max-width: 768px) {
+  .service-item {
+    flex: 0 0 100%;
+  }
+}
+</style>
+
+      <!-- ===== Services End ===== -->
+
+      <!-- ===== Clients End ===== -->
+
+
+      <!-- ===== Contact Start ===== -->
+    <section id="support" class="i pg fh rm ji gp uq">
+  <!-- Bg Shapes -->
+  <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
+  <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
+
+  <!-- Section Title Start -->
+  <div
+    x-data="{ 
+      sectionTitle: `Let’s Stay Connected`, 
+      sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.` 
+    }"
+  >
+    <div class="animate_top bb ze rj ki xn vq">
+      <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b"></h2>
+      <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+    </div>
+  </div>
+  <!-- Section Title End -->
+   <div class="flex justify-center items-center h-screen">
+ <a href="#"     onclick="sendEmail()"  style="display: inline-block; background-color: #fd6901; color: #fff; padding: 14px 28px; border-radius: 10px; font-weight: 600; text-decoration: none; margin-right: 20px; margin-left: 43%; margin-top: 50px;">
+        Send Email Now 
+      </a>
+      </div>
+<script>
+  function sendEmail() {
+    const email = "darjamarketingagency@gmail.com";
+    const subject = "";
+    const body = "";
+
+    // Open Gmail in browser
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+  }
+</script>
+  <!-- Social Icons Row End -->
+</section>
+
+<!-- CSS -->
+<style>
+  /* Bounce slowly */
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .social-icon img {
+    animation: bounce-slow 2s infinite;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  /* Hover effect */
+  .social-icon:hover img {
+    transform: scale(1.3) rotate(10deg);
+  }
+
+  /* Scroll fade-in animation */
+  .social-icon {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: var(--delay);
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+      <!-- ===== Contact End ===== -->
+
+    
+    </main>
+    <!-- ===== Footer Start ===== -->
+   
+ <footer>
+  <div class="bb ze ki xn 2xl:ud-px-0" >
+
+    <!-- Footer Top -->
+
+    <!-- Footer Bottom -->
+    <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj" style="height: 10px;">
+      <div class="animate_top">
+        <ul class="tc wf gg">
+          <li><a href="#" class="xl">English</a></li>
+          <li><a href="#" class="xl">Privacy Policy</a></li>
+          <li><a href="#" class="xl">Support</a></li>
+        </ul>
+      </div>
+ <div class="mt-10 flex justify-center items-center gap-12 flex-nowrap overflow-x-auto px-4" style="display: flex;">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/darjamarketingagency" target="_blank" class="social-icon" style="--delay:0.1s">
+      <div class="flex flex-col items-center">
+        <img src="images/insta.png" alt="Instagram" style="height: 120px;" class="w-12 h-12" />
+      </div>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/+21655251715" target="_blank" class="social-icon" style="--delay:0.3s">
+      <div class="flex flex-col items-center">
+        <img src="images/whatssap.png" alt="WhatsApp" style="height: 120px;" class="w-12 h-12" />
+      </div>
+    </a>
+
+    <!-- TikTok -->
+<a href="https://www.tiktok.com/@darja.marketing.agencey" 
+   target="_blank" 
+   class="social-icon" 
+   style="--delay:0.5s; margin-top: -20px;">
+  <div class="flex flex-col items-center">
+    <img src="images/tik tok.png" 
+         alt="TikTok" 
+         class="w-20 h-20 object-contain" 
+         style="margin-left: 50px; height: 150px;" />
+    
+    <!-- Username (moved up closer) -->
+
+  </div>
+</a>
+
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/yourusername" target="_blank" class="social-icon" style="--delay:0.7s; margin-top: 5px;">
+      <div class="flex flex-col items-center">
+        <img src="images/facebook.png" style="height: 95px; margin-left:80px ;" alt="Facebook" class="w-12 h-12" />
+      </div>
+    </a>
+  </div>
+      <div class="animate_top">
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+  </div>
+</footer>
+
+    <!-- ===== Footer End ===== -->
+
+    <!-- ====== Back To Top Start ===== -->
+<button
+  class="xc wf xf ie ld vg sr gh tr g sa ta _a"
+  style="background-color: #fd6901;"
+  @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+  @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+  :class="{ 'uc' : scrollTop }"
+>
+  <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+  </svg>
+</button>
+
+
+    <!-- ====== Back To Top End ===== -->
+
+    <script>
+      //  Pricing Table
+      const setup = () => {
+        return {
+          isNavOpen: false,
+
+          billPlan: 'monthly',
+
+          plans: [
+            {
+              name: 'Starter',
+              price: {
+                monthly: 29,
+                annually: 29 * 12 - 199,
+              },
+              features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+            },
+            {
+              name: 'Growth Plan',
+              price: {
+                monthly: 59,
+                annually: 59 * 12 - 100,
+              },
+              features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+            },
+            {
+              name: 'Business',
+              price: {
+                monthly: 139,
+                annually: 139 * 12 - 100,
+              },
+              features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+            },
+          ],
+        };
+      };
+    </script>
+  <script defer src="bundle.js"></script></body>
+</html>
